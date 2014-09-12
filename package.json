@@ -1,0 +1,9 @@
+{
+  "name":"webrtc-101",
+  "version":"0.0.1",
+  "description":"a sandbox for WebRTC training",
+  "dependencies":{
+    "express":"latest",
+    "morgan":"latest"
+  }
+}
