@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="wrtc101">
 <head>
   <meta charset="UTF-8">
   <title>WebRTC | Let's get this party starting</title>
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -18,14 +19,28 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
+        <li><a href="#">getUserMedia()</a></li>
       </ul>
     </div>
   </nav>
+<div class="container">
 
-  <h1>Here is an introduction to WebRTC</h1>
+
+  <h1>Here is an introduction to WebRTC - by AMC</h1>
+
+  <div class="container" ng-controller="moduleListCtrl">
+    <a href="{{item.url}}" ng-repeat="item in contentItems">
+      <div class="content-item-container col-md-4">
+        <h1>{{item.name}}</h1>
+        <p>{{item.description}}</p>
+      </div>
+  </a>
+  </div>
+</div>
+
 
 <script src="vendor/angular/angular.min.js"></script>
+<script src="app/core.js"></script>
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

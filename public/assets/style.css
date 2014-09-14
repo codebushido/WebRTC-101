@@ -1,0 +1,18 @@
+body {
+  padding-top: 50px;
+}
+
+.content-item-container {
+  height: 200px;
+  background-color: #222;
+  padding: 10;
+  border:solid #ffffff 2px;
+  transition: all 0.5s
+}
+
+.content-item-container:hover{
+  padding:5;
+  background-color: #fff;
+  border:solid #222 20px;
+
+}
